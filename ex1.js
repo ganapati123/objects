@@ -1,0 +1,39 @@
+
+        var emp = [ {
+                      id:1, 
+                      name:'ganapati',
+                      email:'gana@gmail.com',
+                      phone:'9876543216'                
+                    },
+                    {
+                      id:2, 
+                      name:'raju',
+                      email:'raju@gmail.com',
+                      phone:'9876543215'                
+                    },
+                    {
+                      id:3, 
+                      name:'bhargav',
+                      email:'bhargav@gmail.com',
+                      phone:'9876543214'                
+                    },
+                    {
+                      id:4, 
+                      name:'ramu',
+                      email:'ramu@gmail.com',
+                      phone:'9876543213'                
+                    },
+                    {
+                      id:5, 
+                      name:'ganesh',
+                      email:'ganesh@gmail.com',
+                      phone:'9876543212'                
+                    },
+                    {
+                      id:6, 
+                      name:'gajapati',
+                      email:'gaja@gmail.com',
+                      phone:'9876543211'                
+                    }
+                ]
+          

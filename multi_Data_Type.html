@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var emp = {
+                    id:1,
+                    name:'ganapati',
+                    email:'gana@gmail.com',
+                    married:true,
+                    languages:['telugu','English','hindi','kannada'],
+                    children:
+                           {
+                            elder:'Guru',
+                            younger:'China'
+                           },
+                    childrenDetails:[
+                             {
+                               name:'Guru',
+                               age:3
+                             },
+                             {
+                                name:'China',
+                                age:1
+                             }
+                            ]                                 
+        }
+        document.write(`Id:${emp.id}<br/>`)
+        document.write(`Name:${emp.name}<br/>`)
+        document.write(`Email:${emp.email}<br/>`)
+        document.write(`Maritial status:${emp.married}<br/>`)
+       // document.write(`Languages:${emp.languages}<br/>`)
+       document.write(`<br/>********Using for-loop********<br/>`)
+       for(var index=0; index<=emp.languages.length; index++)
+       {
+        document.write(`<li>${emp.languages[index]}</li>`)
+       }
+       document.write(`<br/>`)
+
+       document.write(`Elder:${emp.children.elder}<br/>`)
+       document.write(`Younger:${emp.children.younger}<br/>`)
+
+       document.write(`<br/>`)
+        
+       document.write(`<br/>********Using for-of-loop********<br/>`)
+    //for_of_loop
+      for(var e of emp.childrenDetails)
+      {
+        document.write(`<ul>
+                             <li>${e.name}</li>
+                             <li>${e.age}</li>
+                       </ul>`)
+      }
+
+
+
+
+    </script>
+</body>
+</html>

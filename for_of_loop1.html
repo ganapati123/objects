@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var emp = [ {
+                      id:1, 
+                      name:'ganapati',
+                      email:'gana@gmail.com',
+                      phone:'9876543216'                
+                    },
+                    {
+                      id:2, 
+                      name:'raju',
+                      email:'raju@gmail.com',
+                      phone:'9876543215'                
+                    },
+                    {
+                      id:3, 
+                      name:'bhargav',
+                      email:'bhargav@gmail.com',
+                      phone:'9876543214'                
+                    },
+                    {
+                      id:4, 
+                      name:'ramu',
+                      email:'ramu@gmail.com',
+                      phone:'9876543213'                
+                    },
+                    {
+                      id:5, 
+                      name:'ganesh',
+                      email:'ganesh@gmail.com',
+                      phone:'9876543212'                
+                    },
+                    {
+                      id:6, 
+                      name:'gajapati',
+                      email:'gaja@gmail.com',
+                      phone:'9876543211'                
+                    }
+                ] 
+                document.write(`<br/>*********Object[index].key********<br/>`)
+                //individual access
+                document.write(`Id:${emp[0].id}<br/>`)
+                document.write(`Name:${emp[0].name}<br/>`)
+                document.write(`Email:${emp[0].email}<br/>`)
+                document.write(`Phone:${emp[0].phone}<br/>`)
+
+                document.write(`<br/>*********Object[index][key]********<br/>`)
+
+                document.write(`Id:${emp[1]['id']}<br/>`)
+                document.write(`Name:${emp[1]['name']}<br/>`)
+                document.write(`Email:${emp[1]['email']}<br/>`)
+                document.write(`Phone:${emp[1]['phone']}<br/>`)
+
+                document.write(`<br/>*********for_of_loop********<br/>`)
+                //access all data using for_of_loop
+                for(var e of emp)
+                {
+                    document.write(`<ul>
+                                         <li>Id:${e.id}</li>
+                                         <li>Name:${e.name}</li>
+                                         <li>Email:${e.email}</li>
+                                         <li>Phone:${e.phone}</li>
+                                 </ul>`)
+                }
+                
+              
+
+    </script>
+</body>
+</html>
